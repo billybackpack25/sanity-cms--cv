@@ -1,11 +1,11 @@
-import groq from 'groq' 
+import groq  from 'groq';
 
 import { groqProjectionFromEnum } from '../../../utils/groq-generator';
 import { experienceGroqProjection } from '../experience/groq';
 import { myDetailsGroqProjection } from '../my-details/groq';
 import { projectGroqProjection } from '../projects/groq';
 import { volunteeringGroqProjection } from '../volunteering/groq';
-import { CVField } from './types';
+import { CVField } from "@shared/types/cv";
 
 export function cvGroqProjection() {
   return groqProjectionFromEnum(CVField, {
@@ -16,4 +16,4 @@ export function cvGroqProjection() {
   });
 }
 
-export const MAIN_WEBSITE_CV_GROQ = groq`*[_type == "cv" && isWebsiteCv == true][0]{${cvGroqProjection()}}`
+export const FETCH_CV_GROQ = groq`*[_type == "cv" && isWebsiteCv == true][0]{${cvGroqProjection()}}`;

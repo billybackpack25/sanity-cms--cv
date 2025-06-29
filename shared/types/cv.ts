@@ -1,13 +1,14 @@
-import { Experience } from "../experience/types";
-import { MyDetails } from "../my-details/types";
-import { Project } from "../projects/types";
-import { Volunteer } from "../volunteering/types";
+import { MyDetails } from "./my-details";
+import { Project } from "./projects";
+import { Volunteer } from "./volunteering";
+import { Experience } from "./experience";
+
 
 export enum CVTheme {
-  DEVELOPER = "developer",
+  DEVELOPER = "developer"
 }
-
 // Only fields you want pulled into frontend
+
 export enum CVField {
   Title = 'title',
   MyDetails = 'myDetails',
@@ -15,7 +16,7 @@ export enum CVField {
   Projects = 'projects',
   Volunteering = 'volunteering',
   IsWebsiteCv = 'isWebsiteCv',
-  Theme = 'theme',
+  Theme = 'theme'
 }
 
 export interface CV {
@@ -27,4 +28,3 @@ export interface CV {
   isWebsiteCv: boolean;
   theme: `${CVTheme}`;
 }
-

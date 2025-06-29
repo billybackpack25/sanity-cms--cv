@@ -1,5 +1,5 @@
 import { defineType } from 'sanity'
-import { TechnologiesFields, Technology } from "./types"
+import { TechnologiesFields, Technology } from "@shared/types/technologies-used";
 
 export const technologiesUsedObject = defineType({
   name: 'technologiesUsed',

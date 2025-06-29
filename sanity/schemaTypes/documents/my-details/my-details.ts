@@ -1,5 +1,5 @@
 import { defineType } from 'sanity'
-import { MyDetailsField } from './types'
+import { MyDetailsField } from "@shared/types/my-details"
 
 export const myDetailsSchema = defineType({
   name: 'myDetails',

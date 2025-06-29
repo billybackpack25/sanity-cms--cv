@@ -1,9 +1,10 @@
-import { SanityImage } from "../../../types/image";
+import { SanityImage } from "./image";
+
 
 export type OtherLink = {
   label: string;
   url: string;
-}
+};
 
 export interface MyDetails {
   fullName: string;
@@ -30,5 +31,5 @@ export enum MyDetailsField {
   Linkedin = 'linkedin',
   Github = 'github',
   Twitter = 'twitter',
-  OtherLinks = 'otherLinks',
+  OtherLinks = 'otherLinks'
 }

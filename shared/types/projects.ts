@@ -1,4 +1,5 @@
-import { SanityImage } from "../../../types/image";
+import { SanityImage } from "./image";
+
 
 export interface Project {
   title: string;
@@ -17,5 +18,5 @@ export enum ProjectField {
   Image = 'image',
   Github = 'github',
   LiveDemo = 'liveDemo',
-  Favourite = 'favourite',
+  Favourite = 'favourite'
 }

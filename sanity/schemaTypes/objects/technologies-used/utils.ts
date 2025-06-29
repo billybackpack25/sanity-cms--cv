@@ -1,5 +1,5 @@
 import groq from 'groq' 
-import { TechnologiesFields } from "./types";
+import { TechnologiesFields } from "@shared/types/technologies-used";
 
 
 export function technologiesUsedGroq(fieldName = 'technologiesUsed') {

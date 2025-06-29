@@ -1,5 +1,5 @@
 import { defineType } from 'sanity'
-import { EmploymentType, ExperienceField } from './types'
+import { EmploymentType, ExperienceField } from "@shared/types/experience"
 
 export const experienceSchema = defineType({
   name: 'experience',

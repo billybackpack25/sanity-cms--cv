@@ -1,5 +1,7 @@
-import { TechnologyChoice } from "../../objects/technologies-used/types";
-import { TimePeriod } from "../../objects/time-period/types";
+import { TechnologyChoice } from "./technologies-used";
+import { TimePeriod } from "./time-period";
+import { SanityImage } from "./image";
+
 
 export interface Reference {
   name?: string;
@@ -19,7 +21,7 @@ export interface Experience {
   title: string;
   company: string;
   companyLink?: string;
-  logo?: any; // Sanity image type
+  logo?: SanityImage;
   location: string;
   employmentType: `${EmploymentType}`;
   employmentPeriod: TimePeriod;
@@ -40,6 +42,5 @@ export enum ExperienceField {
   Description = 'description',
   Highlights = 'highlights',
   TechnologiesUsed = 'technologiesUsed',
-  References = 'references',
+  References = 'references'
 }
-

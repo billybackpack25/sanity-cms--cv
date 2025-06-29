@@ -1,5 +1,5 @@
 import { defineType } from 'sanity'
-import { ProjectField } from './types'
+import { ProjectField } from "@shared/types/projects"
 
 export const projectSchema = defineType({
   name: 'project',

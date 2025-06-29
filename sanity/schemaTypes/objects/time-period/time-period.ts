@@ -1,6 +1,6 @@
 import { defineType } from 'sanity'
 import { yearOptions, currentYear } from './utils'
-import { TimePeriodField, Month } from './types'
+import { TimePeriodField, Month } from "@shared/types/time-period";
 
 export const timePeriodObject = defineType({
   name: 'timePeriod',

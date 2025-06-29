@@ -1,23 +1,22 @@
-export type TimePeriod =
-  | {
-      startYear: number;
-      startMonth: string;
-      isCurrent: true;
-    }
-  | {
-      startYear: number;
-      startMonth: string;
-      isCurrent?: false;
-      endYear: number;
-      endMonth: string;
-    }
+export type TimePeriod = {
+  startYear: number;
+  startMonth: string;
+  isCurrent: true;
+} |
+{
+  startYear: number;
+  startMonth: string;
+  isCurrent?: false;
+  endYear: number;
+  endMonth: string;
+};
 
 export enum TimePeriodField {
   IsCurrent = 'isCurrent',
   StartYear = 'startYear',
   StartMonth = 'startMonth',
   EndYear = 'endYear',
-  EndMonth = 'endMonth',
+  EndMonth = 'endMonth'
 }
 
 export enum Month {
@@ -32,5 +31,5 @@ export enum Month {
   September = 'September',
   October = 'October',
   November = 'November',
-  December = 'December',
+  December = 'December'
 }

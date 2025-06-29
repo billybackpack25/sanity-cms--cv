@@ -7,7 +7,7 @@ export enum TechnologiesFields {
 export type TechnologyChoice = {
   technologyChoice?: string;
   freeText?: string;
-}
+};
 
 
 export enum Technology {

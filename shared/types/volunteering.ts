@@ -1,4 +1,5 @@
-import { TimePeriod } from "../../objects/time-period/types";
+import { TimePeriod } from "./time-period";
+
 
 export interface Volunteer {
   role: string;
@@ -17,5 +18,5 @@ export enum VolunteeringField {
   Location = 'location',
   VolunteeringPeriod = 'volunteeringPeriod',
   Description = 'description',
-  Highlights = 'highlights',
+  Highlights = 'highlights'
 }

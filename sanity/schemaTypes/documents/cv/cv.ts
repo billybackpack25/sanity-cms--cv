@@ -1,5 +1,7 @@
 import { defineType } from 'sanity'
-import { CVTheme, CVField } from './types'
+
+import { CVTheme, CVField } from '@shared/types/cv'
+
 import { WebsiteCvInfoInput } from '../../../components/WebsiteCvInfoInput'
 
 export const cvSchema = defineType({

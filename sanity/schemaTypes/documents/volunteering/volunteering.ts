@@ -1,5 +1,5 @@
 import { defineType } from 'sanity'
-import { VolunteeringField } from './types'
+import { VolunteeringField } from "@shared/types/volunteering"
 
 export const volunteeringSchema = defineType({
   name: 'volunteering',

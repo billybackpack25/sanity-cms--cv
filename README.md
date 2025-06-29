@@ -18,3 +18,9 @@ This repository contains a web application built using [Next.js](https://nextjs.
 ## License
 
 See [LICENSE](LICENSE) for more information.
+
+1. Theme Factory & Structure
+2. UI Framework with Tailwind CSS - shadcn/ui
+3. Light/Dark Mode - Next-Themes Tailwind (`dark:` `light:` classes)
+4. Sanity.io for Content Management
+5. Extensibility: Add new themes by adding a folder and updating the factory
