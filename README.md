@@ -10,7 +10,7 @@ This repository contains a web application built using [Next.js](https://nextjs.
 
 ## Getting Started
 
-1. Clone the repository `git clone git@github.com:billybackpack25/sanity-cms--cv.git`
+1. Clone the repository `git clone git@github.com:bilalhasson/sanity-cms--cv.git`
 2. Install dependencies `npm install`
 3. Set up Sanity.io project and connect it to the app
 4. Run the development server `npm run dev`
