@@ -68,13 +68,15 @@ export default async function SlugPage({
   console.log("pageBuilder", pageBuilder);
 
   return !Array.isArray(pageBuilder) || pageBuilder?.length === 0 ? (
-    <div className="flex flex-col items-center justify-center min-h-[50vh] text-center p-4">
+    <main className="flex flex-col items-center justify-center min-h-[50vh] text-center p-4">
       <h1 className="text-2xl font-semibold mb-4 capitalize">{title}</h1>
       <p className="text-muted-foreground mb-6">
         This page has no content blocks yet.
       </p>
-    </div>
+    </main>
   ) : (
-    <PageBuilder pageBuilder={pageBuilder} id={_id} type={_type} />
+    <main>
+      <PageBuilder pageBuilder={pageBuilder} id={_id} type={_type} />
+    </main>
   );
 }
