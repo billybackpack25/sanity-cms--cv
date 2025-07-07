@@ -63,6 +63,7 @@ export function PageBuilder({
 
   return (
     <section
+      tabIndex={-1}
       className="flex flex-col gap-16 my-16 max-w-7xl mx-auto"
       data-sanity={createDataAttribute({
         id: id,
