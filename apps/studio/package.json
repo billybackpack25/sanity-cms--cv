@@ -26,7 +26,7 @@
     "lucide-react": "^0.525.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "sanity": "^3.93.0",
+    "sanity": "^3.97.1",
     "sanity-plugin-asset-source-unsplash": "^3.0.3",
     "sanity-plugin-icon-picker": "^4.0.0",
     "sanity-plugin-media": "^3.0.3",
