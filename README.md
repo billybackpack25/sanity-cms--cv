@@ -132,3 +132,7 @@ They will be able to access the deployed Studio, where you can collaborate toget
 # Shout out
 
 Huge thanks to [RoboTo Studio](https://robotostudio.com) for creating this template and making it available to the community. If you find this template useful, consider supporting their work.
+
+# Icons
+
+https://lucide.dev/icons/
