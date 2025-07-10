@@ -81,10 +81,10 @@ const LastReads = ({ title, books }: LastReadsProps) => {
               <div className="space-y-2 mt-2">
                 <div
                   title={`Percentage read: ${book.percentageCompleted}%`}
-                  className="relative h-2 bg-blue-100 dark:bg-gray-800 rounded mt-1 mb-2 overflow-hidden"
+                  className="relative h-[13px] bg-accent-green/25 rounded mt-1 mb-2 overflow-hidden"
                 >
                   <div
-                    className="h-full bg-blue-300 dark:bg-cyan-300 transition-all duration-300"
+                    className="h-full bg-accent-green transition-all duration-300"
                     style={{ width: `${book.percentageCompleted}%` }}
                     aria-valuenow={book.percentageCompleted}
                     aria-valuemin={0}
@@ -94,10 +94,7 @@ const LastReads = ({ title, books }: LastReadsProps) => {
                   />
                   <span
                     className={cn(
-                      book.percentageCompleted >= 45 &&
-                        "text-blue-900 dark:text-cyan-900",
-                      book.percentageCompleted < 45 &&
-                        "text-blue-900 dark:text-cyan-900",
+                      "text-accent-green-foreground",
                       "absolute inset-0 flex items-center justify-center text-[10px] font-medium pointer-events-none select-none",
                     )}
                   >
