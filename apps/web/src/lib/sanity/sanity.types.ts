@@ -31,7 +31,7 @@ export type LastReads = {
       crop?: SanityImageCrop;
       _type: "image";
     };
-    percentageCompleted?: number;
+    percentageCompleted: number;
     goodreads?: string;
     note?: string;
     dateCompleted?: string;
@@ -500,7 +500,12 @@ export type PageBuilder = Array<
 
 export type Button = {
   _type: "button";
-  variant?: "default" | "secondary" | "outline" | "link";
+  variant?:
+    | "default"
+    | "secondary"
+    | "outline"
+    | "link"
+    | "accent-green-outline";
   text?: string;
   url?: CustomUrl;
 };
@@ -1420,7 +1425,13 @@ export type QueryHomePageDataResult = {
         > | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -1636,7 +1647,13 @@ export type QueryHomePageDataResult = {
           | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -1694,7 +1711,13 @@ export type QueryHomePageDataResult = {
         > | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -1758,7 +1781,7 @@ export type QueryHomePageDataResult = {
             crop?: SanityImageCrop;
             _type: "image";
           };
-          percentageCompleted?: number;
+          percentageCompleted: number;
           goodreads?: string;
           note?: string;
           dateCompleted?: string;
@@ -2108,7 +2131,13 @@ export type QuerySlugPageDataResult = {
         > | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -2324,7 +2353,13 @@ export type QuerySlugPageDataResult = {
           | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -2382,7 +2417,13 @@ export type QuerySlugPageDataResult = {
         > | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -2446,7 +2487,7 @@ export type QuerySlugPageDataResult = {
             crop?: SanityImageCrop;
             _type: "image";
           };
-          percentageCompleted?: number;
+          percentageCompleted: number;
           goodreads?: string;
           note?: string;
           dateCompleted?: string;
@@ -2790,7 +2831,13 @@ export type QueryBlogIndexPageDataResult = {
         > | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -3006,7 +3053,13 @@ export type QueryBlogIndexPageDataResult = {
           | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -3064,7 +3117,13 @@ export type QueryBlogIndexPageDataResult = {
         > | null;
         buttons: Array<{
           text: string | null;
-          variant: "default" | "link" | "outline" | "secondary" | null;
+          variant:
+            | "accent-green-outline"
+            | "default"
+            | "link"
+            | "outline"
+            | "secondary"
+            | null;
           _key: string;
           _type: "button";
           openInNewTab: boolean | null;
@@ -3128,7 +3187,7 @@ export type QueryBlogIndexPageDataResult = {
             crop?: SanityImageCrop;
             _type: "image";
           };
-          percentageCompleted?: number;
+          percentageCompleted: number;
           goodreads?: string;
           note?: string;
           dateCompleted?: string;
@@ -3907,7 +3966,13 @@ export type QueryNavbarDataResult = {
   > | null;
   buttons: Array<{
     text: string | null;
-    variant: "default" | "link" | "outline" | "secondary" | null;
+    variant:
+      | "accent-green-outline"
+      | "default"
+      | "link"
+      | "outline"
+      | "secondary"
+      | null;
     _key: string;
     _type: "button";
     openInNewTab: boolean | null;

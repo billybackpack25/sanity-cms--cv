@@ -3,7 +3,7 @@ import { defineField, defineType } from "sanity";
 
 import { capitalize, createRadioListLayout } from "../../utils/helper";
 
-const buttonVariants = ["default", "secondary", "outline", "link"];
+const buttonVariants = ["default", "secondary", "outline", "link", "accent-green-outline"];
 
 export const button = defineType({
   name: "button",

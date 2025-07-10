@@ -114,7 +114,7 @@
                   "value": {
                     "type": "number"
                   },
-                  "optional": true
+                  "optional": false
                 },
                 "goodreads": {
                   "type": "objectAttribute",
@@ -3031,6 +3031,10 @@
               {
                 "type": "string",
                 "value": "link"
+              },
+              {
+                "type": "string",
+                "value": "accent-green-outline"
               }
             ]
           },

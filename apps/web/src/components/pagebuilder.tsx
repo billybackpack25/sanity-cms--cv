@@ -14,7 +14,7 @@ import { HeroBlock } from "./sections/hero";
 import { ImageLinkCards } from "./sections/image-link-cards";
 import { SubscribeNewsletter } from "./sections/subscribe-newsletter";
 import { TechStack } from "./sections/tech-stack";
-import { LatestReads } from "./sections/last-reads";
+import { LastReads } from "./sections/LastReads/last-reads";
 
 type PageBlock = NonNullable<
   NonNullable<QueryHomePageDataResult>["pageBuilder"]
@@ -40,7 +40,7 @@ const BLOCK_COMPONENTS = {
   subscribeNewsletter: SubscribeNewsletter,
   imageLinkCards: ImageLinkCards,
   techStack: TechStack,
-  lastReads: LatestReads,
+  lastReads: LastReads,
 } as const;
 
 type BlockType = keyof typeof BLOCK_COMPONENTS;
