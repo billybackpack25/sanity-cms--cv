@@ -57,6 +57,11 @@ const components: Partial<PortableTextReactComponents> = {
     },
   },
   marks: {
+    highlightCode: ({ children }) => (
+      <code className="bg-opacity-5 p-1 text-sm lg:whitespace-nowrap text-accent-green tracking-wide">
+        {children}
+      </code>
+    ),
     code: ({ children }) => (
       <code className="rounded-md border border-white/10 bg-opacity-5 p-1 text-sm lg:whitespace-nowrap">
         {children}
