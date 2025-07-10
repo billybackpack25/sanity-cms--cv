@@ -114,7 +114,7 @@ const LastReads = ({ title, books }: LastReadsProps) => {
               </div>
               <span
                 title={book.author}
-                className="block truncate text-xs  text-accent"
+                className="block truncate text-xs"
                 aria-label={`Author: ${book.author}`}
               >
                 Author: {book.author}
