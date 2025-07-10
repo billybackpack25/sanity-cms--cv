@@ -19,9 +19,10 @@ const Buttons = ({
         disabled={leftBtnDisabled}
         className={cn(
           rightBtnDisabled && "animate-bounce-x",
-          `flex items-center justify-center`,
-          `disabled:bg-muted  disabled:cursor-not-allowed`,
-          "absolute -left-0 top-1/2 h-10 w-10 border-2 border-gray-700 z-10 bg-white/80 hover:bg-white rounded-full shadow transition pointer-events-auto",
+          "flex items-center justify-center dark:bg-muted disabled:bg-muted disabled:cursor-not-allowed",
+          "dark:disabled:opacity-50",
+          "border-accent-green [&>svg]:stroke-accent-green",
+          "absolute -left-0 top-1/2 h-10 w-10 border-2 z-10 bg-white/80 hover:bg-white rounded-full shadow transition pointer-events-auto",
           booksCount === 1 && "hidden",
           booksCount <= 2 && "md:hidden",
           booksCount <= 4 && "xl:hidden",
@@ -35,9 +36,11 @@ const Buttons = ({
         disabled={rightBtnDisabled}
         className={cn(
           !rightBtnDisabled && "animate-bounce-x",
-          `flex items-center justify-center`,
-          `disabled:bg-muted  disabled:cursor-not-allowed`,
-          `absolute -right-0 border-2 border-gray-700 top-1/2 h-10 w-10 z-10 bg-white/80 hover:bg-white rounded-full shadow transition pointer-events-auto`,
+          "flex items-center justify-center",
+          "dark:disabled:opacity-50",
+          "dark:bg-muted disabled:bg-muted disabled:cursor-not-allowed",
+          "border-accent-green [&>svg]:stroke-accent-green",
+          "absolute -right-0 border-2 border-gray-700 top-1/2 h-10 w-10 z-10 bg-white/80 hover:bg-white rounded-full shadow transition pointer-events-auto",
           booksCount === 1 && "hidden",
           booksCount <= 2 && "md:hidden",
           booksCount <= 4 && "xl:hidden",
