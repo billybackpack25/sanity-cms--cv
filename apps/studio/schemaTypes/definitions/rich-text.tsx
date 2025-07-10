@@ -1,4 +1,4 @@
-import { ImageIcon, LinkIcon } from "@sanity/icons";
+import { ImageIcon, LinkIcon, CodeBlockIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 const richTextMembers = [
@@ -37,6 +37,14 @@ const richTextMembers = [
         { title: "Strong", value: "strong" },
         { title: "Emphasis", value: "em" },
         { title: "Code", value: "code" },
+        {
+          title: "Highlight Code",
+          value: "highlightCode",
+          icon: CodeBlockIcon,
+          component: ({ children }) => (
+            <code style={{ color: "green" }}>{children}</code>
+          ),
+        },
       ],
     },
   }),
