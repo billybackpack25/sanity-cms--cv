@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from "react";
 import { LastReadsProps } from "./types";
 import { SanityImage } from "@/components/sanity-image";
 import { handleScroll } from "./utils";
-import { Buttons } from "./Buttons";
+import { Buttons } from "./buttons";
 
 // TODO: Extract carousel + Buttons to ui and import here
 // TODO: Make use of the skeleton loader
