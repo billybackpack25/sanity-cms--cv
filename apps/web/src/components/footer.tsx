@@ -74,7 +74,7 @@ function SocialLinks({ data }: SocialLinksProps) {
             rel="noopener noreferrer"
             aria-label={label}
           >
-            <Icon className="fill-muted-foreground hover:fill-primary/80 dark:fill-zinc-400 dark:hover:fill-primary" />
+            <Icon className="fill-accent-green hover:fill-accent-green-foreground scale-150 transform " />
             <span className="sr-only">{label}</span>
           </Link>
         </li>
